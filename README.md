@@ -7,7 +7,9 @@ Identify movies and TV series episodes from any single video frame (or natural-l
 - **Live Demo (No Sign-Up):** Try 5 free scans/day at [karanfillabs.com](https://karanfillabs.com)
 - **Free Developer Tier:** Sign up for **50 free API scans** and get your `X-API-Key`
 
-  ![Visual DNA API Live Demo](demo.gif)
+  
+
+
 ## 30-Second cURL Test
 
 ### 1. Identify a Movie/Series from a Frame (`POST /v1/identify`)
