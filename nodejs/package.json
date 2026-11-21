@@ -1,0 +1,7 @@
+{
+  "name": "karanfillabs-visual-dna-quickstart",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Node.js quickstart for Karanfil Labs Visual DNA API"
+}
