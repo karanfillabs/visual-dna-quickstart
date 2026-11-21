@@ -44,7 +44,7 @@ async def on_message(message: discord.Message):
     else:
         for i, m in enumerate(matches[:3], start=1):
             title = m.get("title") or m.get("clean_title") or m.get("movie_name") or "Unknown"
-            score = m.get("score")
+            score = m.get("confidence") if m.get("confidence") is not None else m.get("score")
             val = f"Confidence: `{score * 100:.1f}%`" if isinstance(score, (int, float)) else "-"
             embed.add_field(name=f"{i}. {title}", value=val, inline=False)
 
