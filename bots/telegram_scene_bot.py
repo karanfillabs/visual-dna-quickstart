@@ -16,7 +16,7 @@ def format_matches(data: dict) -> str:
     lines = [f"Visual DNA Matches ({data.get('latency_ms', '-')} ms):"]
     for i, m in enumerate(matches[:3], start=1):
         title = m.get("title") or m.get("clean_title") or m.get("movie_name") or "Unknown"
-        score = m.get("score")
+        score = m.get("confidence") if m.get("confidence") is not None else m.get("score")
         score_txt = f"{score * 100:.1f}%" if isinstance(score, (int, float)) else "-"
         lines.append(f"{i}. {title} ({score_txt})")
     rem = (data.get("quota") or {}).get("remaining_quota")
