@@ -11,14 +11,14 @@ Identify movies and TV series episodes from any single video frame (or natural-l
 
 ### 1. Identify a Movie/Series from a Frame (`POST /v1/identify`)
 ```bash
-curl -X POST "[https://api.karanfillabs.com/v1/identify?top_k=5&min_score=0.70](https://api.karanfillabs.com/v1/identify?top_k=5&min_score=0.70)" \
+curl -X POST "https://api.karanfillabs.com/v1/identify?top_k=5&min_score=0.70" \
   -H "X-API-Key: kl_live_YOUR_API_KEY" \
   -F "file=@sample_frame.jpg"
 ```
 
 ### 2. Semantic Scene Search by Text (`POST /v1/search`)
 ```bash
-curl -X POST "[https://api.karanfillabs.com/v1/search](https://api.karanfillabs.com/v1/search)" \
+curl -X POST "https://api.karanfillabs.com/v1/search" \
   -H "X-API-Key: kl_live_YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"query": "rainy neon cyberpunk street at night", "top_k": 5}'
