@@ -6,6 +6,7 @@ Identify movies and TV series episodes from any single video frame (or natural-l
 
 - **Live Demo (No Sign-Up):** Try 5 free scans/day at [karanfillabs.com](https://karanfillabs.com)
 - **Free Developer Tier:** Sign up for **50 free API scans** and get your `X-API-Key`
+
 https://github.com/user-attachments/assets/f67669f3-d9b2-4e47-b515-dfc9a5262bd5
   
 
