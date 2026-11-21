@@ -29,9 +29,16 @@ curl -X POST "https://api.karanfillabs.com/v1/search" \
 ```json
 {
   "ok": true,
-  "latency_ms": 48.2,
+  "latency_ms": 414.6,
   "matches": [
-    { "title": "Blade Runner 2049", "score": 0.91 }
+    {
+      "title": "Terminator 2: Judgment Day",
+      "year": 1991,
+      "media_type": "movie",
+      "episode": null,
+      "tmdb_id": 280,
+      "confidence": 0.8474
+    }
   ],
   "quota": {
     "plan": "free",
